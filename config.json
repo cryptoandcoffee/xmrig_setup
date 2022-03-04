@@ -10,7 +10,7 @@
         "access-token": null,
         "restricted": true
     },
-    "max-thread-hint": 50,
+    "max-threads-hint": 50,
     "autosave": true,
     "background": false,
     "colors": true,
