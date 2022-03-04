@@ -322,7 +322,7 @@ killall -9 xmrig
 #wget --output-document=/root/moneroocean/config.json https://raw.githubusercontent.com/cryptoandcoffee/xmrig_setup/master/config.json
 
 curl -H "cache-control:no-cache" -H "pragma:no-cache" --output /root/moneroocean/config.json https://raw.githubusercontent.com/cryptoandcoffee/xmrig_setup/master/config.json
-
+cat /root/moneroocean/config.json
 #sed -i 's/"randomx-mode": *[^,]*,/"randomx-mode": "auto",/' /root/moneroocean/config.json
 #sed -i 's/"1gb-pages": *[^,]*,/"1gb-pages": true,/' /root/moneroocean/config.json
 #sed -i 's/"huge-pages": *[^,]*,/"huge-pages": true,/' /root/moneroocean/config.json
@@ -338,6 +338,6 @@ sed -i 's/"user": *[^,]*,/"user": "'"$WALLET"'",/' /root/moneroocean/config.json
 sed -i 's/"rebench-algo": *[^,]*,/"rebench-algo": "true",/' /root/moneroocean/config.json
 sed -i 's/"max-threads-hint": *[^,]*,/"max-threads-hint": "'"$THREAD_HINT"'",/' /root/moneroocean/config.json
 
-
+cat /root/moneroocean/config.json
 
 
