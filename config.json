@@ -12,7 +12,7 @@
     },
     "max-threads-hint": 50,
     "autosave": true,
-    "background": false,
+    "background": true,
     "colors": true,
     "title": true,
     "randomx": {
