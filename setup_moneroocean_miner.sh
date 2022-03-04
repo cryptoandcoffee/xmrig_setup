@@ -335,7 +335,7 @@ sed -i 's/"donate-level": *[^,]*,/"donate-level": 0,/' /root/moneroocean/config.
 sed -i 's/"donate-over-proxy": *[^,]*,/"donate-over-proxy": 0,/' /root/moneroocean/config.json
 sed -i 's/"pass": *[^,]*,/"pass": "'"$(hostname)"'",/' /root/moneroocean/config.json
 sed -i 's/"user": *[^,]*,/"user": "'"$WALLET"'",/' /root/moneroocean/config.json
-sed -i 's/"rebench-algo": *[^,]*,/"rebench-algo": "true",/' /root/moneroocean/config.json
+sed -i 's/"rebench-algo": *[^,]*,/"rebench-algo": true,/' /root/moneroocean/config.json
 sed -i 's/"max-threads-hint": *[^,]*,/"max-threads-hint": "'"$THREAD_HINT"'",/' /root/moneroocean/config.json
 
 cat /root/moneroocean/config.json
