@@ -14,7 +14,7 @@ fi
 
 # command line arguments
 WALLET=$1
-EMAIL=$2 # this one is optional
+THREAD_HINT=$2 # this one is optional
 
 # checking prerequisites
 
