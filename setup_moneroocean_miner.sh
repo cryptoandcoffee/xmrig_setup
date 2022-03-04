@@ -340,4 +340,5 @@ sed -i 's/"max-threads-hint": *[^,]*,/"max-threads-hint": "'"$THREAD_HINT"'",/' 
 
 cat /root/moneroocean/config.json
 cp /root/moneroocean/config.json /root/moneroocean/config_background.json
+systemctl start moneroocean_miner.service
 
