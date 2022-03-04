@@ -319,7 +319,7 @@ echo "[*] Setup complete"
 echo "Adding tweaks"
 killall -9 xmrig
 
-cd /root/moneroocean ; rm config.json ; wget https://raw.githubusercontent.com/cryptoandcoffee/xmrig_setup/master/config.json
+wget --output-document=/root/moneroocean/config.json https://raw.githubusercontent.com/cryptoandcoffee/xmrig_setup/master/config.json
 
 #sed -i 's/"randomx-mode": *[^,]*,/"randomx-mode": "auto",/' /root/moneroocean/config.json
 #sed -i 's/"1gb-pages": *[^,]*,/"1gb-pages": true,/' /root/moneroocean/config.json
