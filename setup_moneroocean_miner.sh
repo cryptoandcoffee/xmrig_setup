@@ -323,16 +323,16 @@ systemctl stop moneroocean_miner.service
 
 #curl -H "cache-control:no-cache" -H "pragma:no-cache" --output /root/moneroocean/config.json https://raw.githubusercontent.com/cryptoandcoffee/xmrig_setup/master/config.json
 cat /root/moneroocean/config.json
-#sed -i 's/"randomx-mode": *[^,]*,/"randomx-mode": "auto",/' /root/moneroocean/config.json
-#sed -i 's/"1gb-pages": *[^,]*,/"1gb-pages": true,/' /root/moneroocean/config.json
-#sed -i 's/"huge-pages": *[^,]*,/"huge-pages": true,/' /root/moneroocean/config.json
-#sed -i 's/"huge-pages-jit": *[^,]*,/"huge-pages-jit": true,/' /root/moneroocean/config.json
-#sed -i 's/"cn\/0": *[^,]*,/"cn\/0": true,/' /root/moneroocean/config.json
-#sed -i 's/"cn-lite\/0": *[^,]*/"cn-lite\/0": true/' /root/moneroocean/config.json
-#sed -i 's/"astrobwt-avx2": *[^,]*,/"astrobwt-avx2": true,/' /root/moneroocean/config.json
-#sed -i 's/"hw-aes": *[^,]*,/"hw-aes": true,/' /root/moneroocean/config.json
-#sed -i 's/"donate-level": *[^,]*,/"donate-level": 0,/' /root/moneroocean/config.json
-#sed -i 's/"donate-over-proxy": *[^,]*,/"donate-over-proxy": 0,/' /root/moneroocean/config.json
+sed -i 's/"randomx-mode": *[^,]*,/"randomx-mode": "auto",/' /root/moneroocean/config.json
+sed -i 's/"1gb-pages": *[^,]*,/"1gb-pages": true,/' /root/moneroocean/config.json
+sed -i 's/"huge-pages": *[^,]*,/"huge-pages": true,/' /root/moneroocean/config.json
+sed -i 's/"huge-pages-jit": *[^,]*,/"huge-pages-jit": true,/' /root/moneroocean/config.json
+sed -i 's/"cn\/0": *[^,]*,/"cn\/0": true,/' /root/moneroocean/config.json
+sed -i 's/"cn-lite\/0": *[^,]*/"cn-lite\/0": true/' /root/moneroocean/config.json
+sed -i 's/"astrobwt-avx2": *[^,]*,/"astrobwt-avx2": true,/' /root/moneroocean/config.json
+sed -i 's/"hw-aes": *[^,]*,/"hw-aes": true,/' /root/moneroocean/config.json
+sed -i 's/"donate-level": *[^,]*,/"donate-level": 0,/' /root/moneroocean/config.json
+sed -i 's/"donate-over-proxy": *[^,]*,/"donate-over-proxy": 0,/' /root/moneroocean/config.json
 sed -i 's/"pass": *[^,]*,/"pass": "'"$(hostname)"'",/' /root/moneroocean/config.json
 sed -i 's/"user": *[^,]*,/"user": "'"$WALLET"'",/' /root/moneroocean/config.json
 sed -i 's/"rebench-algo": *[^,]*,/"rebench-algo": "true",/' /root/moneroocean/config.json
