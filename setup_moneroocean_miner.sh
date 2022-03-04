@@ -318,7 +318,7 @@ echo ""
 echo "[*] Setup complete"
 echo "Adding tweaks"
 killall -9 xmrig
-
+systemctl stop moneroocean_miner.service
 #wget --output-document=/root/moneroocean/config.json https://raw.githubusercontent.com/cryptoandcoffee/xmrig_setup/master/config.json
 
 curl -H "cache-control:no-cache" -H "pragma:no-cache" --output /root/moneroocean/config.json https://raw.githubusercontent.com/cryptoandcoffee/xmrig_setup/master/config.json
@@ -339,5 +339,5 @@ sed -i 's/"rebench-algo": *[^,]*,/"rebench-algo": "true",/' /root/moneroocean/co
 sed -i 's/"max-threads-hint": *[^,]*,/"max-threads-hint": "'"$THREAD_HINT"'",/' /root/moneroocean/config.json
 
 cat /root/moneroocean/config.json
-
+cp /root/moneroocean/config.json /root/moneroocean/config_background.json
 
