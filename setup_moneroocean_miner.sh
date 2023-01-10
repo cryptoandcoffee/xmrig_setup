@@ -347,8 +347,10 @@ fi
 
 
 cat /root/moneroocean/config.json
-cp /root/moneroocean/config.json /root/moneroocean/config_background.json
+
+cp $HOME/moneroocean/config.json $HOME/moneroocean/config_background.json
 sed -i 's/"background": *false,/"background": true,/' $HOME/moneroocean/config_background.json
+
 
 systemctl start moneroocean_miner.service
 
