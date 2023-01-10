@@ -24,10 +24,12 @@ sed -i 's/"max-threads-hint": *[^,]*,/"max-threads-hint": '$THREAD_HINT',/' conf
 sed -i 's/"rig-id": *[^,]*,/"rig-id": "'"$(hostname)"'",/' config.json
 #CPU Priority
 sed -i 's/"priority": *[^,]*,/"priority": '$PRIORITY',/' config.json
-
+sed -i 's/"background": *false,/"background": true,/' config.json
 sed -i 's/"algo": *[^,]*,/"algo": "rx\/0",/' config.json
 sed -i 's/"url": *[^,]*,/"url": "'"$URL"'",/' config.json
 sed -i 's/"rebench-algo": *[^,]*,/"rebench-algo": false,/' config.json
    
 
 chmod +x xmrig
+./xmrig
+tail -f /var/log/xmrig.log
