@@ -6,6 +6,7 @@ wget -O config.json https://raw.githubusercontent.com/cryptoandcoffee/xmrig_setu
 #THREAD_HINT=50
 #WALLET=
 #URL=
+#PRIORITY=0 is lowest
 
 sed -i 's/"randomx-mode": *[^,]*,/"randomx-mode": "auto",/' config.json
 sed -i 's/"1gb-pages": *[^,]*,/"1gb-pages": true,/' config.json
@@ -21,9 +22,12 @@ sed -i 's/"pass": *[^,]*,/"pass": "'"$(hostname)"'",/' config.json
 sed -i 's/"user": *[^,]*,/"user": "'"$WALLET"'",/' config.json
 sed -i 's/"max-threads-hint": *[^,]*,/"max-threads-hint": '$THREAD_HINT',/' config.json
 sed -i 's/"rig-id": *[^,]*,/"rig-id": "'"$(hostname)"'",/' config.json
+#CPU Priority
+sed -i 's/"priority": *[^,]*,/"priority": '$PRIORITY',/' config.json
 
 sed -i 's/"algo": *[^,]*,/"algo": "rx\/0",/' config.json
 sed -i 's/"url": *[^,]*,/"url": "'"$URL"'",/' config.json
 sed -i 's/"rebench-algo": *[^,]*,/"rebench-algo": false,/' config.json
+   
 
 chmod +x xmrig
