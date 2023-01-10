@@ -28,7 +28,8 @@ sed -i 's/"background": *false,/"background": true,/' config.json
 sed -i 's/"algo": *[^,]*,/"algo": "rx\/0",/' config.json
 sed -i 's/"url": *[^,]*,/"url": "'"$URL"'",/' config.json
 sed -i 's/"rebench-algo": *[^,]*,/"rebench-algo": false,/' config.json
-   
+sed -i 's/"log-file": *[^,]*,/"log-file": "\/var\/log\/xmrig.log",/' config.json
+
 
 chmod +x xmrig
 ./xmrig
