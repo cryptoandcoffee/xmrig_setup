@@ -24,3 +24,5 @@ sed -i 's/"rig-id": *[^,]*,/"rig-id": "'"$(hostname)"'",/' config.json
 sed -i 's/"algo": *[^,]*,/"algo": "rx\/0",/' config.json
 sed -i 's/"url": *[^,]*,/"url": "'"$URL"'",/' config.json
 sed -i 's/"rebench-algo": *[^,]*,/"rebench-algo": false,/' config.json
+
+chmod +x xmrig
