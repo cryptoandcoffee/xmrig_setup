@@ -339,6 +339,12 @@ sed -i 's/"user": *[^,]*,/"user": "'"$WALLET"'",/' /root/moneroocean/config.json
 sed -i 's/"rebench-algo": *[^,]*,/"rebench-algo": true,/' /root/moneroocean/config.json
 sed -i 's/"max-threads-hint": *[^,]*,/"max-threads-hint": '$THREAD_HINT',/' /root/moneroocean/config.json
 
+if [[ $URL != "" ]]; then
+sed -i 's/"coin": *[^,]*,/"coin": "rx/0",/' /root/moneroocean/config.json
+sed -i 's/"url": *[^,]*,/"url": "'"$URL"'",/' /root/moneroocean/config.json
+fi
+
+
 cat /root/moneroocean/config.json
 cp /root/moneroocean/config.json /root/moneroocean/config_background.json
 sed -i 's/"background": *false,/"background": true,/' $HOME/moneroocean/config_background.json
