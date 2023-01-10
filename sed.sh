@@ -1,9 +1,10 @@
 wget https://github.com/cryptoandcoffee/xmrig_setup/raw/master/xmrig
 wget -O config.json https://raw.githubusercontent.com/cryptoandcoffee/xmrig_setup/master/config.json.bak
 
-THREAD_HINT=50
-WALLET=
-URL=
+#Defined in launch string
+#THREAD_HINT=50
+#WALLET=
+#URL=
 
 sed -i 's/"randomx-mode": *[^,]*,/"randomx-mode": "auto",/' config.json
 sed -i 's/"1gb-pages": *[^,]*,/"1gb-pages": true,/' config.json
