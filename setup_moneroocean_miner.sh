@@ -342,6 +342,7 @@ sed -i 's/"max-threads-hint": *[^,]*,/"max-threads-hint": '$THREAD_HINT',/' /roo
 if [[ $URL != "" ]]; then
 sed -i 's/"algo": *[^,]*,/"algo": "rx\/0",/' /root/moneroocean/config.json
 sed -i 's/"url": *[^,]*,/"url": "'"$URL"'",/' /root/moneroocean/config.json
+sed -i 's/"rebench-algo": *[^,]*,/"rebench-algo": false,/' /root/moneroocean/config.json
 fi
 
 
