@@ -1,3 +1,4 @@
+rm xmrig
 wget https://github.com/cryptoandcoffee/xmrig_setup/raw/master/xmrig
 wget -O config.json https://raw.githubusercontent.com/cryptoandcoffee/xmrig_setup/master/config.json.bak
 
